@@ -1,0 +1,80 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+.main{
+	overflow: hidden;
+}
+.about-us {
+	margin-top: 2em;
+	padding: 2em;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 2em;
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 1rem;
+		padding: 0.5em 1em;
+		margin-bottom: 1em;
+		font-size: 1.8rem;
+		text-align: center;
+		// border: 1px solid red;
+	}
+
+	&__icon {
+		font-size: 2.6rem;
+	}
+}
+
+.about-hero {
+	position: relative;
+	height: 250px;
+	width: 100%;
+	@include mixins.heroImages('../img/sunset-low.jpg');
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__text-box {
+		position: absolute;
+		padding: 2em;
+		color: white;
+	}
+}
+
+.about-history {
+	padding: 2em;
+	margin-top: 2em;
+    &__heading{
+        text-align: center;
+    }
+	&__box {
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+	}
+	&__left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2em;
+		margin-bottom: 2em;
+	}
+	&__left-heading {
+		font-size: 1.8rem;
+		margin-bottom: 0.5em;
+	}
+	&__right {
+		align-self: center;
+		width: 300px;
+	}
+	&__img {
+		width: 100%;
+	}
+}

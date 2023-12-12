@@ -1,0 +1,25 @@
+@use '../abstracts/colors';
+
+@mixin focus {
+	outline: none;
+	border: 0.5px solid colors.$outline;
+	border-radius: 5px;
+}
+
+@mixin heroImages($bgImg){
+    background-image: colors.$header-shadow, url($bgImg);
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin pageHero{
+    position: relative;
+		width: 100%;
+		height: 100%;
+}
+@mixin heroHeading{
+    position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}

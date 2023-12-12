@@ -1,0 +1,37 @@
+@use '../abstracts/mixins';
+@use '../abstracts/colors';
+.header {
+	margin-top: 50px;
+	width: 100%;
+	overflow: hidden;
+	
+	&__text,
+	&__info-text {
+		font-weight: 300;
+	}
+	&__img {
+		position: relative;
+		height: 400px;
+	}
+	&__img-box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+        transform: translate(-40%, -40%);
+        width: 80%;
+		font-size: 1.4rem;
+		color: colors.$white-color;
+	}
+
+	&__img-one {
+		@include mixins.heroImages('../img/main-carousel-1.jpg');
+	}
+	&__img-two {
+		@include mixins.heroImages('../img/main-carousel-2.jpg');
+	}
+	&__img-three {
+		@include mixins.heroImages('../img/main-carousel-3.jpg');
+	}
+
+	
+}
