@@ -14,15 +14,15 @@
 		row-gap: 2em;
 	}
 	&__card {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		row-gap: 1rem;
-		padding: 0.5em 1em;
-		margin-bottom: 1em;
-		font-size: 1.8rem;
-		text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1rem;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+	font-size: 1.8rem;
+	text-align: center;
 		// border: 1px solid red;
 	}
 
@@ -71,8 +71,8 @@
 		margin-bottom: 0.5em;
 	}
 	&__right {
-		align-self: center;
-		width: 300px;
+	align-self: center;
+	width: 300px;
 	}
 	&__img {
 		width: 100%;
